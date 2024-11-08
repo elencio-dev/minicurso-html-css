@@ -1,4 +1,4 @@
-##Minicurso: Front-end para iniciantes - Do zero ao seu primeiro site.
+## Minicurso: Front-end para iniciantes - Do zero ao seu primeiro site.
 
 ![Banner do Minicurso](./assets/background-redame.png)
 
@@ -11,4 +11,4 @@ Este minicurso foi desenvolvido para iniciantes que desejam aprender sobre desen
 - Estilos com CSS e princípios de design responsivo
 - Ferramentas de desenvolvimento e melhores práticas
 
-### Está atividade foi desenvolvida como uma das acões da unilab student chapter na semana universitária.
+> Está atividade foi desenvolvida como uma das acões da unilab student chapter na semana universitária.
