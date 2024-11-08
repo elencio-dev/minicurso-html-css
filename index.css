@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+  --color-primary: #b11d23;        /* Vermelho Profundo */
+  --color-primary-light: #f25f5c;  /* Vermelho Claro para Hover */
+  --color-primary-dark: #8c1a1e;   /* Vermelho Escuro */
+  --color-background: #f9f9f9;     /* Fundo Claro */
+  --color-background-alt: #f3f3f3; /* Fundo Secundário */
+  --color-text: #333333;           /* Texto Principal */
+  --color-highlight: #ffd166;      /* Amarelo/Laranja para Destaques */
+  --color-accent: #06d6a0;         /* Verde Claro para Sucesso */
+}
+
+/* Reset de estilo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+/* Estilização do Cabeçalho */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: var(--color-primary-dark);
+  color: #ffffff;
+}
+
+.header #logo-semana {
+  height: 60px;
+}
+
+#header-options {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+}
+
+#header-options ul {
+  display: flex;
+  list-style: none;
+}
+
+#header-options ul li {
+  margin-right: 20px;
+}
+
+#header-options ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#header-options ul li a:hover {
+  color: var(--color-highlight);
+}
+
+.btn-inscrever {
+  padding: 10px 20px;
+  color: var(--color-primary-dark);
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-inscrever:hover {
+  background-color: var(--color-primary-light);
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  color: #ffffff;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Sobreposição escura para contraste */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  width: 900px;
+}
+
+.hero-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.btn-saber-mais {
+  padding: 10px 30px;
+  color: #ffffff;
+  background-color: var(--color-primary);
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.btn-saber-mais:hover {
+  background-color: var(--color-primary-light);
+}
+
+/* Cards dos Monitores */
+.mentores {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: var(--color-background-alt);
+}
+
+.mentores h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  border-radius: 10px;
+  border: 2px solid var(--color-primary);
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 200px !important;
+  max-height: 200px !important;
+  object-fit: cover;
+  margin: auto;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.card h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: var(--color-primary-dark);
+}
+
+.card p {
+  font-size: 1em;
+  color: var(--color-text);
+}
+
+/* Seção de Contato */
+.contato {
+  padding: 40px 20px;
+  background-color: var(--color-background-alt);
+  text-align: center;
+}
+
+.contato h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+}
+
+.contato p {
+  font-size: 1.1em;
+  color: var(--color-text);
+  margin-bottom: 30px;
+}
+
+.contato form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contato input, .contato textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--color-accent);
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.btn-enviar {
+  padding: 10px;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-enviar:hover {
+  background-color: var(--color-primary-light);
+}
+
+/* sobre nós */
+.sobre-nos {
+  padding: 40px 20px;
+  background-color: var(--color-background-alt);
+  text-align: center;
+}
+
+.sobre-nos h2 {
+  font-size: 2em;
+  color: var(--color-primary);
+  margin-bottom: 15px;
+}
+
+.sobre-nos p {
+  font-size: 1.1em;
+  color: var(--color-text);
+  line-height: 1.6;
+  margin-bottom: 15px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+
+  #header-options ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero {
+    height: 50vh;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
