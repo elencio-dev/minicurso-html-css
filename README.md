@@ -1,4 +1,4 @@
-## Minicurso: Front-end para iniciantes - Do zero ao seu primeiro site.
+## Minicurso: Front-end para iniciantes - Do zero ao seu primeiro landing Page.
 
 ![Banner do Minicurso](./assets/background-redame.png)
 
